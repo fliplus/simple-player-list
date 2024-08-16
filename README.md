@@ -44,8 +44,9 @@ Players without operator status can run `/playerlist` to toggle the mod on their
 
 ## Support and Contributions
 
-Feel free to report issues or suggest features through the mod's issue tracker. Contributions are welcome - simply fork
-the repository and submit a pull request with your improvements.
+Feel free to report issues or suggest features through the mod's
+[issue tracker](https://github.com/fliplus/simple-player-list/issues). Contributions are welcome - simply fork the
+repository and submit a pull request with your improvements.
 
 ---
 
