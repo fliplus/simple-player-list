@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "fliplus.simpleplayerlist.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "PlayerListMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
