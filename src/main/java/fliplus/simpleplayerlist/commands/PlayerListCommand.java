@@ -28,14 +28,14 @@ public class PlayerListCommand {
             context.getSource().sendSuccess(() -> Component.literal(message).withStyle(ChatFormatting.ITALIC, ChatFormatting.GRAY), false);
 
             return 0;
-        }).requires(source -> source.hasPermission(2)).then(Commands.literal("reload").executes(context -> {
+        }).then(Commands.literal("reload").requires(source -> source.hasPermission(2)).executes(context -> {
             ServerPlayer player = context.getSource().getPlayer();
             assert player != null;
 
             SimplePlayerListConfig.INSTANCE.load(context.getSource());
 
             return 0;
-        })).then(Commands.literal("toggle").executes(context -> {
+        })).then(Commands.literal("toggle").requires(source -> source.hasPermission(2)).executes(context -> {
             MinecraftServer server = context.getSource().getServer();
             ServerPlayer player = context.getSource().getPlayer();
             assert player != null;
