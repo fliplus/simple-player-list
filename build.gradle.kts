@@ -89,6 +89,7 @@ dependencies {
         getProperty("deps.modmenu")?.takeIf { it.isNotBlank() }?.let {
             modstitchModImplementation("com.terraformersmc:modmenu:$it")
         }
+        modstitchModImplementation("eu.pb4:placeholder-api:${getProperty("deps.placeholder-api")}")
     }
 
     val devAuthLoader = loader.takeIf { it != "vanilla" } ?: "fabric"

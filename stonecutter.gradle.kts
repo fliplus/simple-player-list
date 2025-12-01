@@ -7,5 +7,6 @@ allprojects {
     repositories {
         maven("https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1")
         maven("https://maven.terraformersmc.com/")
+        maven("https://maven.nucleoid.xyz/")
     }
 }
