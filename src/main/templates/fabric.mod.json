@@ -8,14 +8,14 @@
     "${mod_author}"
   ],
   "contact": {
-    "sources": "https://github.com/fliplus/modstitch-stonecutter-template"
+    "sources": "https://github.com/fliplus/simple-player-locator"
   },
   "license": "${mod_license}",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.loaders.fabric.FabricEntrypoint"
+      "fliplus.loaders.fabric.FabricEntrypoint"
     ]
   },
   "depends": {

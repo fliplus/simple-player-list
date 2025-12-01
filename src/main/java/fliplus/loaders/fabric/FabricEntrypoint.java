@@ -1,14 +1,14 @@
 //? if fabric {
-package com.example.loaders.fabric;
+package fliplus.loaders.fabric;
 
-import com.example.ExampleMod;
+import fliplus.SimplePlayerList;
 import net.fabricmc.api.ModInitializer;
 
 public class FabricEntrypoint implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ExampleMod.initialize();
+        SimplePlayerList.initialize();
     }
 }
 //?}

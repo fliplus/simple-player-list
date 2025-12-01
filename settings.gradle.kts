@@ -29,4 +29,4 @@ stonecutter {
     }
 }
 
-rootProject.name = "modstitch-stonecutter-template"
+rootProject.name = "simple-player-list"

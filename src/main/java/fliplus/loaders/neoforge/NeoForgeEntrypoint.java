@@ -1,14 +1,14 @@
 //? if neoforge {
-/*package com.example.loaders.neoforge;
+/*package fliplus.loaders.neoforge;
 
-import com.example.ExampleMod;
+import fliplus.SimplePlayerList;
 import net.neoforged.fml.common.Mod;
 
-@Mod(ExampleMod.MOD_ID)
+@Mod(SimplePlayerList.MOD_ID)
 public class NeoForgeEntrypoint {
 
     public NeoForgeEntrypoint() {
-        ExampleMod.initialize();
+        SimplePlayerList.initialize();
     }
 }
 *///?}

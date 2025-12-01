@@ -1,10 +1,8 @@
 {
   "required": true,
-  "package": "com.example.mixins",
+  "package": "fliplus.mixins",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "ExampleMixin"
-  ],
+  "mixins": [],
   "injectors": {
     "defaultRequire": 1
   },
