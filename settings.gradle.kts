@@ -18,7 +18,7 @@ stonecutter {
         vcsVersion = "1.21.10-fabric"
 
         val versions = listOf("1.21.10")
-        val loaders = listOf("fabric", "neoforge", "vanilla")
+        val loaders = listOf("fabric", "vanilla")
 
         fun registerVersionForLoaders(version: String, loaders: List<String>) =
             loaders.forEach { loader -> version("$version-$loader", version) }

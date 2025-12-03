@@ -11,7 +11,7 @@ modstitch {
 
     metadata {
         modId = getProperty("mod.id")
-        modVersion = "${getProperty("mod.version")}+${stonecutter.current.version}-${loader}"
+        modVersion = "${getProperty("mod.version")}+${stonecutter.current.version}"
         modGroup = getProperty("mod.group")
         modName = getProperty("mod.name")
         modDescription = getProperty("mod.description")
@@ -51,19 +51,6 @@ modstitch {
                 named("server") { runDir("run/server") }
             }
             tasks { registerCleanTasks("fabric") }
-        }
-    }
-
-    moddevgradle {
-        neoForgeVersion = getProperty("deps.neoforge")
-
-        defaultRuns()
-        configureNeoForge {
-            runs {
-                named("client") { gameDirectory = layout.projectDirectory.dir("run/client") }
-                named("server") { gameDirectory = layout.projectDirectory.dir("run/server") }
-            }
-            tasks { registerCleanTasks("mod development") }
         }
     }
 
