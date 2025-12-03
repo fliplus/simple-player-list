@@ -40,7 +40,7 @@ These variants provide improved color logic and presentation.
 To apply changes made to the configuration file, use the in-game command `/simpleplayerlist reload`.
 Players can run `/simpleplayerlist` to toggle the mod on their end.
 
-## Requirements
+## Dependencies
 - [Fabric API](https://modrinth.com/mod/fabric-api)
 - [Placeholder API](https://modrinth.com/mod/placeholder-api)
 
