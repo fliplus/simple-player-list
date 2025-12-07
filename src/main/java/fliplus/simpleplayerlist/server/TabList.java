@@ -1,4 +1,4 @@
-package fliplus.server;
+package fliplus.simpleplayerlist.server;
 
 import eu.pb4.placeholders.api.ParserContext;
 import eu.pb4.placeholders.api.PlaceholderContext;
@@ -6,8 +6,8 @@ import eu.pb4.placeholders.api.PlaceholderResult;
 import eu.pb4.placeholders.api.Placeholders;
 import eu.pb4.placeholders.api.node.TextNode;
 import eu.pb4.placeholders.api.parsers.NodeParser;
-import fliplus.SimplePlayerList;
-import fliplus.config.Settings;
+import fliplus.simpleplayerlist.SimplePlayerList;
+import fliplus.simpleplayerlist.config.Settings;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundTabListPacket;

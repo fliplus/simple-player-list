@@ -1,8 +1,8 @@
-package fliplus;
+package fliplus.simpleplayerlist;
 
-import fliplus.config.Settings;
-import fliplus.config.SimplePlayerListConfig;
-import fliplus.server.TabList;
+import fliplus.simpleplayerlist.config.Settings;
+import fliplus.simpleplayerlist.config.SimplePlayerListConfig;
+import fliplus.simpleplayerlist.server.TabList;
 
 import java.util.logging.Logger;
 

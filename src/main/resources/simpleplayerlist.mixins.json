@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "fliplus.mixins",
+  "package": "fliplus.simpleplayerlist.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "injectors": {

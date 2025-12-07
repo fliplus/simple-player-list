@@ -1,4 +1,4 @@
-package fliplus.config;
+package fliplus.simpleplayerlist.config;
 
 import java.util.List;
 

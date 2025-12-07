@@ -1,9 +1,9 @@
-package fliplus.commands;
+package fliplus.simpleplayerlist.commands;
 
 import com.mojang.brigadier.CommandDispatcher;
-import fliplus.SimplePlayerList;
-import fliplus.config.SimplePlayerListConfig;
-import fliplus.server.TabList;
+import fliplus.simpleplayerlist.SimplePlayerList;
+import fliplus.simpleplayerlist.config.SimplePlayerListConfig;
+import fliplus.simpleplayerlist.server.TabList;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;

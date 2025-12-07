@@ -1,9 +1,9 @@
 //? if fabric {
-package fliplus.loaders.fabric;
+package fliplus.simpleplayerlist.loaders.fabric;
 
-import fliplus.SimplePlayerList;
-import fliplus.commands.SimplePlayerListCommand;
-import fliplus.server.TabList;
+import fliplus.simpleplayerlist.SimplePlayerList;
+import fliplus.simpleplayerlist.commands.SimplePlayerListCommand;
+import fliplus.simpleplayerlist.server.TabList;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;

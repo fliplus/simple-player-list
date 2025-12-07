@@ -15,7 +15,7 @@
   "environment": "server",
   "entrypoints": {
     "main": [
-      "fliplus.loaders.fabric.FabricEntrypoint"
+      "fliplus.simpleplayerlist.loaders.fabric.FabricEntrypoint"
     ]
   },
   "depends": {

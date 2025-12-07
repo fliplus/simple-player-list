@@ -1,10 +1,10 @@
-package fliplus.config;
+package fliplus.simpleplayerlist.config;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
-import fliplus.SimplePlayerList;
+import fliplus.simpleplayerlist.SimplePlayerList;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static fliplus.SimplePlayerList.MOD_ID;
+import static fliplus.simpleplayerlist.SimplePlayerList.MOD_ID;
 
 public class SimplePlayerListConfig {
     private static final Path configDirectory = FabricLoader.getInstance().getConfigDir();
