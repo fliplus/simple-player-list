@@ -10,14 +10,14 @@ pluginManagement {
 }
 
 plugins {
-    id("dev.kikugie.stonecutter") version "0.7.11"
+    id("dev.kikugie.stonecutter") version "0.8.2"
 }
 
 stonecutter {
     create(rootProject) {
-        vcsVersion = "1.21.10-fabric"
+        vcsVersion = "1.21.11-fabric"
 
-        val versions = listOf("1.21.10")
+        val versions = listOf("1.21.10", "1.21.11")
         val loaders = listOf("fabric", "vanilla")
 
         fun registerVersionForLoaders(version: String, loaders: List<String>) =

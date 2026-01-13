@@ -11,7 +11,11 @@ import fliplus.simpleplayerlist.config.Settings;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundTabListPacket;
-import net.minecraft.resources.ResourceLocation;
+//? if >=1.21.11 {
+import net.minecraft.resources.Identifier;
+//? } else {
+/*import net.minecraft.resources.ResourceLocation;
+*///? }
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.ServerTickRateManager;
 import net.minecraft.server.level.ServerPlayer;
@@ -72,7 +76,11 @@ public class TabList {
     }
 
     public static void registerPlaceholders() {
-        Placeholders.register(ResourceLocation.fromNamespaceAndPath("server", "mspt_colored_alt"), (ctx, arg) -> {
+        //? if >=1.21.11 {
+        Placeholders.register(Identifier.fromNamespaceAndPath("server", "mspt_colored_alt"), (ctx, arg) -> {
+        //? } else {
+        /*Placeholders.register(ResourceLocation.fromNamespaceAndPath("server", "mspt_colored_alt"), (ctx, arg) -> {
+        *///? }
             MinecraftServer server = ctx.server();
             ServerTickRateManager tickRateManager = server.tickRateManager();
 
@@ -83,7 +91,11 @@ public class TabList {
             return PlaceholderResult.value(heatmapColor(formatedMSPT, MSPT, tickRateManager.millisecondsPerTick()));
         });
 
-        Placeholders.register(ResourceLocation.fromNamespaceAndPath("server", "tps_colored_alt"), (ctx, arg) -> {
+        //? if >=1.21.11 {
+        Placeholders.register(Identifier.fromNamespaceAndPath("server", "tps_colored_alt"), (ctx, arg) -> {
+        //? } else {
+        /*Placeholders.register(ResourceLocation.fromNamespaceAndPath("server", "tps_colored_alt"), (ctx, arg) -> {
+        *///? }
             MinecraftServer server = ctx.server();
             ServerTickRateManager tickRateManager = server.tickRateManager();
 
@@ -97,7 +109,11 @@ public class TabList {
             return PlaceholderResult.value(heatmapColor(formatedTPS, MSPT, tickRateManager.millisecondsPerTick()));
         });
 
-        Placeholders.register(ResourceLocation.fromNamespaceAndPath("player", "ping_colored_alt"), (ctx, arg) -> {
+        //? if >=1.21.11 {
+        Placeholders.register(Identifier.fromNamespaceAndPath("player", "ping_colored_alt"), (ctx, arg) -> {
+        //? } else {
+        /*Placeholders.register(ResourceLocation.fromNamespaceAndPath("player", "ping_colored_alt"), (ctx, arg) -> {
+        *///? }
             if (ctx.hasPlayer()) {
                 int ping = ctx.player().connection.latency();
                 return PlaceholderResult.value(heatmapColor(String.valueOf(ping), ping, 200));
