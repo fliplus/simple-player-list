@@ -10,6 +10,10 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundTabListPacket;
 import net.minecraft.server.level.ServerPlayer;
+//? if >= 1.21.11 {
+import net.minecraft.server.permissions.Permission;
+import net.minecraft.server.permissions.PermissionLevel;
+//? }
 
 public class SimplePlayerListCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
@@ -43,7 +47,11 @@ public class SimplePlayerListCommand {
 
             return 0;
         }).then(Commands.literal("reload")
-            .requires(source -> source.hasPermission(2))
+            //? if >=1.21.11 {
+            .requires(source -> source.permissions().hasPermission(new Permission.HasCommandLevel(PermissionLevel.GAMEMASTERS)))
+            //? } else {
+            /*.requires(source -> source.hasPermission(2))
+            *///? }
             .executes(context -> {
                 SimplePlayerList.CONFIG = SimplePlayerListConfig.loadConfig(context.getSource());
                 return 0;

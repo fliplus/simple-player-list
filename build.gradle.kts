@@ -1,5 +1,5 @@
 plugins {
-    id("dev.isxander.modstitch.base") version "0.7.1-unstable"
+    id("dev.isxander.modstitch.base") version "0.8.4"
 }
 
 val loader: String = stonecutter.current.project.substringAfter("-", "vanilla")
